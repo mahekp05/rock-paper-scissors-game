@@ -6,6 +6,7 @@ function getComputerChoice() {
 };
 
 function game(cSelection, uSelection){
+    
     switch(cSelection){
         case 'rock':
             if (uSelection === 'rock'){
