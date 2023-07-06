@@ -36,12 +36,14 @@ function game(cSelection, uSelection){
     }
 
 const userChoiceB = document.querySelector("userChoiceButton");
+const resultShow = document.querySelector("#results");
 let computerChoice = getComputerChoice();
 let playerChoice;
 let result;
 
 userChoiceB.forEach(button => button.addEventListener("click", () => {
     playerChoice = button.textContent;
+    result = game(computerChoice,playerChoice);
+    resultShow.textContent = result;
 }));
 
-result = game(computerChoice,playerChoice);
