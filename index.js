@@ -35,19 +35,13 @@ function game(cSelection, uSelection){
         }
     }
 
-function ucRock(){
-    winner = game(getComputerChoice(),'rock');
-    return winner;
-}
-    
-function ucPaper(){
-    winner = game(getComputerChoice(),'paper');
-    return winner;
-}
-    
-function ucScissors(){
-    winner = game(getComputerChoice(),'scissors');
-    return winner;
-}
+const userChoiceB = document.querySelector("userChoiceButton");
+let computerChoice = getComputerChoice();
+let playerChoice;
+let result;
 
+userChoiceB.forEach(button => button.addEventListener("click", () => {}) {
+    playerChoice = butten.textContent();
+});
 
+result = game(computerChoice,playerChoice);
