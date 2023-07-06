@@ -40,8 +40,8 @@ let computerChoice = getComputerChoice();
 let playerChoice;
 let result;
 
-userChoiceB.forEach(button => button.addEventListener("click", () => {}) {
-    playerChoice = butten.textContent();
-});
+userChoiceB.forEach(button => button.addEventListener("click", () => {
+    playerChoice = button.textContent;
+}));
 
 result = game(computerChoice,playerChoice);
