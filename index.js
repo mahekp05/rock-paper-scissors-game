@@ -35,12 +35,19 @@ function game(cSelection, uSelection){
         }
     }
 
+function ucRock(){
+    winner = game(getComputerChoice(),'rock');
+    return winner;
+}
+    
+function ucPaper(){
+    winner = game(getComputerChoice(),'paper');
+    return winner;
+}
+    
+function ucScissors(){
+    winner = game(getComputerChoice(),'scissors');
+    return winner;
+}
 
-const prompt = require('prompt-sync')();
-
-var computerSelection = getComputerChoice();
-
-//prompt is used for html
-//const userSelection = prompt('Ready to play rock-paper-scissors? COOL!! /n Make an selection: rock, paper, or scissors');
-const userSelection = 'rock';
 
