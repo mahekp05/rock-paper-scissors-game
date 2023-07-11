@@ -1,12 +1,17 @@
+/*
 const playerShow = document.querySelector(".player");
 const computerShow = document.querySelector(".computer");
 const resultShow = document.querySelector(".results");
 const userChoiceButtons = document.querySelectorAll(".userChoiceButton");
+*/
+const resultShow = document.querySelector(".results");
+
 
 let computerChoice;
 let playerChoice;
 let result;
 
+/*
 userChoiceButtons.forEach(button => button.addEventListener("click", () => {
     playerChoice = button.textContent;
     playerShow.innerHTML = playerChoice;
@@ -15,6 +20,7 @@ userChoiceButtons.forEach(button => button.addEventListener("click", () => {
     result = game(computerChoice, playerChoice);
     resultShow.innerHTML = result;
 }));
+*/
 
 function getComputerChoice() {
     choices = ['rock' , 'paper' , 'scissors'];
@@ -22,6 +28,29 @@ function getComputerChoice() {
     return choices[index];
     
 };
+
+function uRock() {
+    playerChoice = 'rock';
+    computerChoice = getComputerChoice();
+    result = game(computerChoice,playerChoice);
+    resultShow.innerHTML = result;
+}
+
+function uPaper() {
+    playerChoice = 'paper';
+    computerChoice = getComputerChoice();
+    result = game(computerChoice,playerChoice);
+    resultShow.innerHTML = result;
+}
+
+function uScissors() {
+    playerChoice = 'scissors';
+    computerChoice = getComputerChoice();
+    result = game(computerChoice,playerChoice);
+    resultShow.innerHTML = result;
+}
+
+
 
 function game(cSelection, uSelection){
     
@@ -55,3 +84,5 @@ function game(cSelection, uSelection){
             break;
         }
     }
+
+

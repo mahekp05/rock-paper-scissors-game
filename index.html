@@ -10,15 +10,16 @@
         <div class = 'header'>
             <h1>Rock-Paper-Scissors Game</h1>
         </div>
-        <div class = 'buttons'>
-            <button class="userChoiceButton" style = 'margin-right: 40px;'>rock</button>
-            <button class="userChoiceButton">paper</button>
-            <button class="userChoiceButton" style = 'margin-left: 40px;'>scissors</button>
+        <div class = 'img-container'>
+            <!---<button class="userChoiceButton" style = 'margin-right: 40px;'>rock</button> -->
+            <img  src="images/rock.png" id="rock" onclick="uRock();">
+            <img  src="images/paper.png" id="paper" onclick="uPaper()">
+            <img  src="images/scissors.png" id="scissors" onclick="uScissors()">
+            <!-- <button class="userChoiceButton">paper</button> 
+            <button class="userChoiceButton" style = 'margin-left: 40px;'>scissors</button>-->
         </div>
         <div class = 'results'>
-            <h3 class = 'player'>Player:</h3>
-            <h3 class = 'computer'>Computer:</h3>
-            <h3 class = 'results'>Result: </h3>
+            <h3 class = 'results'> </h3>
         </div>
         <script src = "app.js"></script>
     </body>
