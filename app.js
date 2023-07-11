@@ -1,6 +1,6 @@
-const playerShow = document.querySelector("#player");
-const computerShow = document.querySelector("#computer");
-const resultShow = document.querySelector("#results");
+const playerShow = document.querySelector(".player");
+const computerShow = document.querySelector(".computer");
+const resultShow = document.querySelector(".results");
 const userChoiceButtons = document.querySelectorAll(".userChoiceButton");
 
 let computerChoice;
@@ -9,14 +9,11 @@ let result;
 
 userChoiceButtons.forEach(button => button.addEventListener("click", () => {
     playerChoice = button.textContent;
-    //playerShow.textContent = playerChoice;
-    console.log(playerChoice);
+    playerShow.innerHTML = playerChoice;
     computerChoice = getComputerChoice()
-    //computerShow.textContent = computerChoice;
-    console.log(computerChoice);
+    computerShow.innerHTML = computerShow;
     result = game(computerChoice, playerChoice);
-    console.log(result);
-    //resultShow.textContent = result;
+    resultShow.innerHTML = result;
 }));
 
 function getComputerChoice() {
@@ -58,22 +55,3 @@ function game(cSelection, uSelection){
             break;
         }
     }
-
-    /*
-const userChoiceButtons = document.querySelectorAll(".userChoiceButton");
-const playerShow = document.querySelector("#player");
-const computerShow = document.querySelector("#computer");
-const resultShow = document.querySelector("#results");
-let computerChoice = getComputerChoice();
-let playerChoice;
-let result;
-
-userChoiceButtons.forEach(button => button.addEventListener("click", () => {
-    playerChoice = button.textContent;
-    playerShow.textContent = playerChoice;
-    computerShow.textContent = computerChoice;
-    result = game(computerChoice, playerChoice);
-    resultShow.textContent = result;
-}));
-
-/*https://www.youtube.com/watch?v=n1_vHArDBRA*/
